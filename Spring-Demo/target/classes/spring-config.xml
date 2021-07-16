@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	  http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+	
+	
+	
+
+
+	<bean id="myDemo2" class="com.fis.app.model.DemoClass" autowire="byType" init-method="doInit" destroy-method="doDestroy" scope="singleton">
+		<property name="Name" value="Priya"></property>
+		<property name="USN" value="9"></property>
+		<property name="email" value="abc@gmailcom"></property>
+		<property name="branch" value="iSE"></property>
+	</bean>
+	<bean id="myDemo4" class="com.fis.app.model.DemoClass">
+		<property name="Name" value="Dolly"></property>
+		<property name="USN" value="3"></property>
+		<property name="email" value="dca@gmailcom"></property>
+		<property name="branch" value="ISE"></property>
+	</bean>
+	
+	<bean id="subjects" class="com.fis.app.model.Subjects">
+		<property name="subName" value="DSA"></property>
+		<property name="subCode" value="17cs055"></property>
+		<property name="subMarks" value="45"></property>
+	</bean>
+	
+      <bean id="mark1" class="com.fis.app.model.Marks">
+        <property name="sub1" value="69" />
+        <property name="sub2" value="90" />
+        <property name="sub3" value="80" />
+       
+    </bean>
+</beans>
